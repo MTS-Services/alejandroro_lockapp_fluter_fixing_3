@@ -1,0 +1,83 @@
+@extends('layouts.app')
+@section('title','Users')
+@section('content')                           
+<!--Page header-->
+<div class="page-header d-lg-flex d-block">
+    <div class="page-leftheader">
+        <h4 class="page-title">Users</h4>
+    </div>
+</div>
+<!--End Page header-->
+
+<div class="row">
+    <div class="col-xl-12 col-md-12 col-lg-12">
+        <div class="card">
+            <div class="card-header  border-0">
+                <h4 class="card-title">Users List</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered text-nowrap border-bottom" id="basic-datatable">
+                        <thead>
+                            <tr>
+                                <th class="border-bottom-0 w-5">No</th>
+                                <th class="border-bottom-0">Name</th>
+                                <th class="border-bottom-0 w-10">Email</th>
+                                <th class="border-bottom-0">Gender</th>
+                                <th class="border-bottom-0">DOB</th>
+                                <th class="border-bottom-0">Interests</th>
+                                <th class="border-bottom-0">Join Date</th>
+                                <th class="border-bottom-0">Status</th>
+                                <th class="border-bottom-0">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach ($user_list as $key => $value)
+                                <tr>
+                                    <td>{{$key+1}}</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <span class="avatar avatar-md brround mr-3" style="background-image: url('{{$value->profile}}')"></span>
+                                            <div class="mr-3 mt-0 mt-sm-1 d-block">
+                                                <h6 class="mb-1 fs-14">{{$value->firstname}} {{$value->lastname}}</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>{{$value->email}}</td>
+                                    <td>{{$value->gender}}</td>
+                                    <td>{{$value->dob}}</td>
+                                    <td>
+                                        <?php $interests = explode(',', $value->interests); ?>
+                                        @foreach ($interests as $key => $interest)
+                                            <a class="btn btn-sm btn-white mt-1" href="#">{{ucfirst($interest)}}</a>
+                                        @endforeach
+                                    </td>
+                                    <td>{{$value->created_at}}</td>
+                                    <td>
+                                        @if($value->status==1)
+                                            <span class="badge badge-success">Active</span>
+                                        @elseif($value->status==0)
+                                            <span class="badge badge-danger">Deactive</span>
+                                        @endif
+                                    </td>
+                                    <td class="text-left d-flex">
+                                        <a href="{{URL::to('viewuser/'.$value->id)}}" class="action-btns1">
+                                            <i class="feather feather-eye  text-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="view"></i>
+                                        </a>
+                                        <a href="{{URL::to('deleteuser/'.$value->id)}}" class="action-btns1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                            <i class="feather feather-trash-2 text-danger"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@endsection
+@section('customjs')
+@endsection
