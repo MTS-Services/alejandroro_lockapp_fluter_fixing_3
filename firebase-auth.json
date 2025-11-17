@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "affinitydating-be555",
+  "private_key_id": "e1a302cacc56d9e7ccc5b45560250e8b09d9c8e4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQP1qj3c6WQt8g\nGUbgIHxfOqw72Ga4V+d/PcgBA0MaBuYpeY3cZOBXzEgUzdblGvmeOOXNGojUIhH/\na+uMpE69b5PXqnbe0zyo41AexLa5B6EMdvne+iaRvhXiVsXMufCHaU+xRTco/u67\nUAmyeGV4lmfhCN+IkWLgHRgiVBSSVuLcQjKLqhPRyfYA1m+ZwCa4OmV0Cr18cvho\np1F8NH9YUaJvm7y1tPxjAr8aDcOoBSZdnJ5jf/8iSu5b9yMvYJMkHnU7hUCrbFxo\nUOPR1EDH3XuFbpYepQkfCykm74bPxuvdmgQvwOwZAB2I9vTIRa7xQsmsbZp6ZGS8\nwdtrSLfBAgMBAAECggEARVMh4HVBhaIjVzMy9f+6h5UnqxCCOZIB3cj6YOPuHab4\nTgxKHnlyeafmww43ILPXL0XvslTIAh6JcUdC9eHo2IVhaSU1Rz547hwmGugPkA8r\nHNQqoIET/+aQsHWEiX/Iw7taLUBGeZ5MaQze/Yu48+jWEgL7LyJ/EO5+j0cARiqO\nnXZG2TfHuQezmBmnxxnEY1H/JnF+SPc0axor1j1vt2F1ZImJMQe0AZr8oVBuQoVo\nWZ+PNj44ZfFGO6sjVSjKSYA66qpxkbCA+tElC6zR6ekB8hKBqXi8PoQ2r9AJjHu+\nNDPnMb0NSWvXBYKazab+Rb09ySUJS0dUwR/tZHuOpQKBgQDxr5LCnDPIxJHgbl6i\ncKQh1Va61jaKpx6LCRV+/k/aPFeVOqYvWeDbxIaGQJUgLLzgGiz7EPUo5tez7WOe\nimaswrb2vSb5xERq1FlI0b+d7hinzI45K2SVM7t8cEoJfso85y7cCSh5gzenac/Y\n0vBLAOJdfj/T0DasZEp1s6HJhwKBgQDclMpT7q4lxmlNCnrmjkX5Wcv+WE8ve9c+\nqCMl7VzWJc7KhdSePLweid5lvXko7rybRpHzNajzTp2S9yS/3L8MgDAp3pUkak5F\nS81FWy9J7w4hfnWcTVotUBzFM7LWqhdkxPJo3iioZDqgsz1ma0kqGvoGm0uKOyr8\nVqzB4gYmdwKBgQC+U3+FljEJmBMw5HnN/lqi8jh8phkJk5Xv89Vjzq3ftMlcEXWx\nsFvtdZRiwRUu40xSRwrJJI+MCE4xuW5L+b3lquke4dKButgOMO+m8tatbkUoT2Rp\nDQ0Gmli5JEyJsbldwMkcKnIfTwBS7HbrzyHATw/0hGmLSlrj447npfBwnQKBgC8w\nFWiHMvIZ1AULLOeNoCKLtzweIDKER7O7vGkssiONywNARg/j5kqSK+WP9w9uoyKE\nokxpOk9yjfsWq+Hvk19VPPh4CWfU5hGk+bDQpPkoDtnTd82MLrJq5Py65pNNp9uC\n1mjgvcnoRzKBpaz3XpuHUd1/81UK+1MoJ6UCeVZZAoGAbIl8M0EagFi9cTXiWZfv\nIHL34qE86zs9ahXq1jmHUd1BeUHSwCQiJNX/xDvrj3rfv2T0f4hkLN1B6nnkOVrR\nGd/75X4Nze6Qa9HGqeD+cSgRzE+vpIIC7PN8UONlAreRNb583H6ZBncC4HajHpq2\nmk4MQwwb5jGbPSIBO92VMzM=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@affinitydating-be555.iam.gserviceaccount.com",
+  "client_id": "105477807556337076085",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40affinitydating-be555.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

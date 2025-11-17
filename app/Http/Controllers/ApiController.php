@@ -23,6 +23,10 @@ use App\Models\AbuseReport;
 use App\Models\Packages;
 use App\Models\Membership;
 use App\Models\UserBlock;
+
+// use Kreait\Laravel\Firebase\Facades\Firebase;
+// use Kreait\Firebase\Messaging\CloudMessage;
+
 class ApiController extends Controller
 {
     public function __construct(ApiManager $apiManager){
@@ -61,6 +65,17 @@ class ApiController extends Controller
         $user->longitude = $request->longitude;
         $user->about = $request->about;
         $user->save();
+
+        //  if ($user && $user->device_token) {
+        //     $notification = array('title' => "New user registered", 'body' => "New user registered", 'sound' => 'default', 'badge' => '1');
+        //     $messaging = Firebase::messaging();
+        //     $message = CloudMessage::withTarget('token', $user->device_token)
+        //         ->withNotification($notification);
+        //     $profile_detail = $this->apiManager->getUserProfile($user->id);
+        //     $sendReport = $messaging->send($message);
+        //     return response()->json(['status' => true, 'message' => 'Registration done successfully and notification sent', 'data' => $profile_detail]);
+        // }
+
         if($user) {
             $user_id = $user->id;
             $profile_detail = $this->apiManager->getUserProfile($user_id);
